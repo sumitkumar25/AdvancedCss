@@ -1,0 +1,28 @@
+{
+  "name": "advancedcss",
+  "version": "1.0.0",
+  "description": "advanced css scss flexbox grid",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/styles.scss css/styles.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sumitkumar25/AdvancedCss.git"
+  },
+  "keywords": [
+    "css",
+    "flexbox",
+    "grid",
+    "animations"
+  ],
+  "author": "sumitkumar25",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sumitkumar25/AdvancedCss/issues"
+  },
+  "homepage": "https://github.com/sumitkumar25/AdvancedCss#readme",
+  "devDependencies": {
+    "node-sass": "^4.13.1"
+  }
+}
