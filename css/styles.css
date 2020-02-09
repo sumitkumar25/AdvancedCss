@@ -1,73 +1,3 @@
-/*
-COLORS:
-
-Light green: #7ed56f
-Medium green: #55c57a
-Dark green: #28b485
-
-*/
-/* Basice reset */
-*,
-*::after,
-*::before {
-  margin: 0;
-  padding: 0; }
-
-html {
-  box-sizing: border-box;
-  font-size: 100%; }
-
-body {
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  font-size: 1.6rem;
-  line-height: 1.7;
-  color: #777777;
-  padding: 3rem; }
-
-.header {
-  height: 95vh;
-  /* % of view height */
-  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.35), rgba(40, 180, 133, 0.66)), url(./../img/hero.jpg);
-  background-size: cover;
-  background-position: top;
-  clip-path: polygon(0 0, 100% 0, 100% 70vh, 0 100%);
-  position: relative; }
-
-.header__logo-block {
-  position: absolute;
-  top: 4rem;
-  left: 4rem; }
-
-.header__logo {
-  height: 3.5rem; }
-
-.header__heading-block {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center; }
-
-.heading-primary {
-  color: #ffffff;
-  text-transform: uppercase;
-  text-align: center;
-  backface-visibility: hidden;
-  margin-bottom: 3rem; }
-
-.heading-primary--main {
-  font-size: 6rem;
-  font-weight: 400;
-  letter-spacing: 3.5rem;
-  animation: moveInLeft 2s; }
-
-.heading-primary--sub {
-  font-size: 2rem;
-  font-weight: 700;
-  letter-spacing: 1.5rem;
-  animation: moveInRight 2s; }
-
 @keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -87,6 +17,81 @@ body {
   100% {
     opacity: 1;
     transform: translateX(0); } }
+
+@keyframes moveInButtom {
+  0% {
+    opacity: 0;
+    transform: translateY(10rem); }
+  /* 80% {
+        transform: translateX(-10px);
+      } */
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+/* Basice reset */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box; }
+
+.margin--defautl {
+  margin: 2em; }
+
+.margin--default-vertical {
+  margin: 2em 0; }
+
+.border--default {
+  border: 1px solid #ac6fd5c7; }
+
+.pad--default {
+  padding: 2em; }
+
+.pad--default-vertical {
+  padding: 2em 0; }
+
+.pad--default-bottom {
+  padding: 0 0 2em 0; }
+
+.center--margin {
+  margin: 0 auto; }
+
+.center-text {
+  text-align: center; }
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.7;
+  color: #777777;
+  padding: 3rem; }
+
+.heading-primary {
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  backface-visibility: hidden;
+  margin-bottom: 3rem; }
+
+.heading-primary--main {
+  font-size: 6rem;
+  font-weight: 400;
+  letter-spacing: 3.5rem;
+  animation: moveInLeft 2s; }
+
+.heading-primary--sub {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 1.5rem;
+  animation: moveInRight 2s; }
 
 .btn:link,
 .btn:visited {
@@ -133,13 +138,58 @@ body {
 .btn--white::after {
   background-color: white; }
 
-@keyframes moveInButtom {
-  0% {
-    opacity: 0;
-    transform: translateY(10rem); }
-  /* 80% {
-      transform: translateX(-10px);
-    } */
-  100% {
-    opacity: 1;
-    transform: translateX(0); } }
+.grid-test-section {
+  background-color: #373538; }
+
+.grid-custom .row {
+  max-width: 114rem;
+  background-color: #a29cbb;
+  margin: 6rem auto; }
+  .grid-custom .row:last-child {
+    margin-bottom: 0; }
+  .grid-custom .row [class^="col-"] {
+    float: left;
+    background-color: #dfd8fa;
+    text-align: center;
+    font-weight: bold; }
+    .grid-custom .row [class^="col-"]:not(:last-child) {
+      margin-right: 6rem; }
+  .grid-custom .row .col-1-of-2 {
+    width: calc((100% - 6rem) / 2); }
+  .grid-custom .row .col-1-of-3 {
+    width: calc((100% - 2 * 6rem) / 3); }
+  .grid-custom .row .col-1-of-4 {
+    width: calc((100% - 3 * 6rem) / 4); }
+  .grid-custom .row .col-2-of-3 {
+    width: calc(2 * ((100% - 2 * 6rem) / 3) + 6rem); }
+  .grid-custom .row .col-2-of-4 {
+    width: calc(2 * ((100% - 3 * 6rem) / 4) + 6rem); }
+  .grid-custom .row .col-3-of-4 {
+    width: calc(3 * ((100% - 3 * 6rem) / 4) + (2 * 6rem)); }
+  .grid-custom .row::after {
+    content: "";
+    display: table;
+    clear: both; }
+
+.header {
+  height: 95vh;
+  background-image: linear-gradient(to right bottom, rgba(172, 111, 213, 0.35), rgba(42, 40, 180, 0.66)), url(./../img/bg.jpg);
+  background-size: cover;
+  background-position: top;
+  clip-path: polygon(0 0, 100% 0, 100% 70vh, 0 100%);
+  position: relative; }
+
+.header__logo-block {
+  position: absolute;
+  top: 4rem;
+  left: 4rem; }
+
+.header__logo {
+  height: 3.5rem; }
+
+.header__heading-block {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center; }
