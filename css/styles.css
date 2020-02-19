@@ -222,6 +222,30 @@ body {
   .composition:hover .composition__photo:not(:hover) {
     transform: scale(0.8); }
 
+.feature-box {
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 1.5rem;
+  padding: 2.5rem;
+  text-align: center;
+  border-radius: 2rem;
+  box-shadow: 0 2rem 4rem rgba(255, 255, 255, 0.9);
+  transition: transform 0.3s; }
+  .feature-box:hover {
+    transform: translateY(-1.5rem) scale(1.2);
+    background-color: white;
+    outline: 1rem solid #7755c5;
+    outline-offset: 1rem;
+    outline-color: rgba(119, 85, 197, 0.8);
+    outline-style: double; }
+  .feature-box__icon {
+    font-size: 6rem;
+    margin-bottom: 0.5rem;
+    background-image: linear-gradient(to right, #2a28b4, #ac6fd5c7);
+    display: inline-block;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent; }
+
 .row {
   max-width: 114rem;
   margin: 0 auto; }
@@ -277,3 +301,11 @@ body {
   background-color: #f7f7f9;
   padding: 25rem 0;
   margin-top: -20rem; }
+
+.section-features {
+  padding: 25rem 0;
+  background-image: linear-gradient(to right bottom, rgba(172, 111, 213, 0.35), rgba(42, 40, 180, 0.66)), url(../../img/features/features-bg.jpg);
+  transform: skewY(-5deg);
+  margin-top: -8rem; }
+  .section-features > * {
+    transform: skewY(5deg); }

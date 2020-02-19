@@ -2,8 +2,10 @@
 
 ## Contents
 
-1. Css animations
-2. Responsive grid using Floats.
+1. Sass
+2. Responsive grid implementation.
+3. Sass 7-1 Architecture.
+4. Icon font usage.
 
 # Sass.
 
@@ -84,4 +86,11 @@ Three main categories.
 1. Image optimisation.
 
 ### Media Queries.
+
+# Icon fonts.
+
+Images does not scale well. Therefore vector icons fonts are better.
+Svg is also an option.
+
+## Font vs svg 
 
