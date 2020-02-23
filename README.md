@@ -2,10 +2,11 @@
 
 ## Contents
 
-1. Sass
-2. Responsive grid implementation.
-3. Sass 7-1 Architecture.
-4. Icon font usage.
+01. Sass
+02. Responsive grid implementation.
+03. Sass 7-1 Architecture.
+04. Icon font usage.
+05. CSS properties.
 
 # Sass.
 
@@ -15,13 +16,13 @@
 
 ## Sass Partials
 
-1. Starts with _
-2. While import no prefix _ and no extension
+01. Starts with _
+02. While import no prefix _ and no extension
 
 ## Sass variable 
 
-1. $variableName
-2. Inside css calc #{variableDeclaration})
+01. $variableName
+02. Inside css calc #{variableDeclaration})
 
 ## 7-1 Architecture.
 
@@ -72,18 +73,18 @@
 
 Three main categories.
 
-1. Float Layouts.
-2. FlexBox
+01. Float Layouts.
+02. FlexBox
 
    a. Unidirectional.
 
-3. Css Grid.
+03. Css Grid.
 
    b. Bidirectional.
 
 ### Flexible and responsive images.
 
-1. Image optimisation.
+01. Image optimisation.
 
 ### Media Queries.
 
@@ -93,4 +94,41 @@ Images does not scale well. Therefore vector icons fonts are better.
 Svg is also an option.
 
 ## Font vs svg 
+
+# CSS Properties
+
+01. Perspective.
+
+   -. Use moz prefix.
+
+02. Background Clip
+
+   - Webkit prefix.
+
+03. Backface Visibility.
+04. Background blend mode.
+
+   - overflow hidden required if rouded coreners of parent and 
+   image reaches the edges.
+
+05. Clip Path
+06. Box decoration break.
+07. Perspective.
+08. figure
+09. shape-outside
+
+   - element has to be floated.
+   - with specified height and width.
+
+10. Figure and figcaption.
+11. filter.
+12. video.
+13. source
+14. object-fit
+
+## Forward Content.
+01. Animated buttons. No presentation to button presentation.
+02. transform precedence.
+03. Need for backface visibility.
+04. src vs source
 

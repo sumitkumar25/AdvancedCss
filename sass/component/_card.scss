@@ -1,0 +1,120 @@
+.card {
+  perspective: 100rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  height: 50rem;
+
+  &__side {
+    height: 50rem;
+    transition: all 1s ease;
+    color: white;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    backface-visibility: hidden;
+    border-radius: 1rem;
+    box-shadow: 0 2rem 40px rgba($color: $color-black, $alpha: 1);
+    overflow: hidden;
+
+    &--front {
+      background-color: $color-white;
+    }
+
+    &--back {
+      transform: rotateY(180deg);
+      &-1 {
+        background: linear-gradient(to right, $color-card-1, $color-card-2);
+      }
+      &-2 {
+        background: linear-gradient(to right, $color-card-1, $color-card-2);
+      }
+      &-3 {
+        background: linear-gradient(to right, $color-card-1, $color-card-2);
+      }
+    }
+  }
+  &:hover &__side {
+    &--front {
+      transform: rotateY(-180deg);
+    }
+    &--back {
+      transform: rotateY(0);
+    }
+  }
+
+  // front card styles
+  &__image {
+    height: 50%;
+    &--1 {
+      // background: url(../../img/people/driver1.jpg) ;
+      background-image: linear-gradient(to right, rgba($color-card-1, 0.2), rgba($color-card-2, 0.2)),
+        url(../../img/people/driver1.jpg);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-blend-mode: screen;
+      // clip-path: inset(0, 0, 100%, 0, 100%, 80%, 0, 100%);
+      clip-path: circle(40%);
+    }
+    &--2 {
+      background-image: url(../../img/people/driver2.jpg);
+    }
+    &--3 {
+      background-image: url(../../img/people/principle.jpg);
+    }
+  }
+
+  &__heading {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: $color-white;
+    position: absolute;
+    top: 12rem;
+    right: 2rem;
+    text-align: right;
+    width: 70%;
+  }
+
+  &__heading-span {
+    padding: 1rem 1.5rem;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    &--1 {
+      background-image: linear-gradient(to left, rgba($color-card-1, 0.6), rgba($color-card-2, 1));
+    }
+  }
+
+  &__details {
+    ul {
+      margin: 0 auto;
+      list-style: none;
+      width: 80%;
+      color: $color-black;
+      li {
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 1rem;
+        &:not(:last-child) {
+          border-bottom: 1px solid #efefef;
+        }
+      }
+    }
+  }
+
+  &__stats {
+    margin: auto 0;
+    &--started {
+      font-size: 2rem;
+
+    }
+    &--wins {
+      font-size: 5rem;
+      font-weight: 100;
+    }
+    &--podiums {
+      font-size: 5rem;
+    }
+  }
+}

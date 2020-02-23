@@ -1,11 +1,11 @@
 .header {
   height: 95vh;
-  background-image: linear-gradient(to right bottom, rgba($color-primary-light, 0.35), rgba($color-primary-dark, 0.66)),
-    url(./../img/bg.jpg);
+  background-image: linear-gradient(to top right, rgba($color-primary-dark, 1), rgba($color-primary-light, 0.1)),
+    url(./../img/bg-header.jpg);
 
   background-size: cover;
-  background-position: top;
-  clip-path: polygon(0 0, 100% 0, 100% 70vh, 0 100%);
+  background-position: bottom;
+  clip-path: polygon(0 0, 100% 0, 100% 66vh, 0 100%);
   position: relative;
 }
 
@@ -24,4 +24,3 @@
   transform: translate(-50%, -50%);
   text-align: center;
 }
-

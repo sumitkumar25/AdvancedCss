@@ -1,22 +1,27 @@
 // font size
 $font-size-default: 1.6rem;
-// colors
-$color-primary: #7755c5;
-$color-primary-light: #ac6fd5c7;
-$color-primary-dark: #2a28b4;
-
-$color-secondary: #a29cbb;
-
-$color-white: #ffffff;
-$color-black: #000000;
 
 // background
-
-$bg-primary: #a29cbb;
-$bg-primary-light: #dfd8fa;
-$bg-primary-dark: #373538;
-
+$bg-primary-light: rgb(253, 127, 139);
+$bg-primary: rgb(255, 42, 63);
+$bg-primary-dark: #bd2031;
 $bg-primary-grey: #f7f7f9;
+// colors
+$color-primary-light: rgb(253, 127, 139);
+$color-primary: rgb(255, 42, 63);
+$color-primary-dark: #bd2031;
+//btns
+$color-primary-btn: #ebd21e;
+
+$color-secondary: #a29cbb;
+$color-white: #ffffff;
+$color-black: #000000;
+$color-grey-border: #efefef;
+
+$color-card-1: #ffb900;
+$color-card-2: #ff7730;
+$color-card-3: #2998ff;
+$color-card-4: #564356;
 
 //  GRID
 
