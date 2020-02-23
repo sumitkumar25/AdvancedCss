@@ -32,8 +32,8 @@
   opacity: 0;
 }
 
-.btn--white {
-  background-color: white;
+.btn-primary {
+  background-color: $color-primary-btn;
   color: #777777;
   padding: 1.5rem 4rem;
 }
@@ -41,8 +41,8 @@
   animation: moveInButtom 0.5s ease-out 0.7s;
   animation-fill-mode: backwards;
 }
-.btn--white::after {
-  background-color: white;
+.btn-primary::after {
+  background-color: $color-primary-btn;
 }
 
 .btn-text {
