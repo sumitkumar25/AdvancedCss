@@ -125,10 +125,18 @@ Svg is also an option.
 12. video.
 13. source
 14. object-fit
+15. Gradients.linear gradient mimicking clip-path
+16. adjacent sibling,genric sibling,(both needs to be after the selected element) universal selector.
+17. ::input-placeholder
+18. :focus, :invalid, placeholder-shown, :checked. 
+19. Custom radio button.
 
 ## Forward Content.
+
 01. Animated buttons. No presentation to button presentation.
 02. transform precedence.
 03. Need for backface visibility.
-04. src vs source
+04. src vs source.
+05. Input element font family inheritence.
+07. Visibility animation possibility.
 
