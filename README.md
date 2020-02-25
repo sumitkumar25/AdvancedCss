@@ -130,6 +130,10 @@ Svg is also an option.
 17. ::input-placeholder
 18. :focus, :invalid, placeholder-shown, :checked. 
 19. Custom radio button.
+20. Checkbox hack.
+21. Animation timing fns using bezier curves.
+22. solid color gradients animations.
+23. transform origin
 
 ## Forward Content.
 
