@@ -24,6 +24,24 @@
 01. $variableName
 02. Inside css calc #{variableDeclaration})
 
+## Responsive Design
+
+### DESKTOP first.
+
+**Media queries based on max-width.**
+
+### MOBILE first
+
+**Media queries based on min-width.**
+
+01. Media queries doesn't add any specificity.
+
+02. Breakpoint selections.
+
+   - Select based on real world device popularity.
+   
+   - **Ignore devices all together and focus on content**
+
 ## 7-1 Architecture.
 
 ### Directory base
@@ -133,7 +151,13 @@ Svg is also an option.
 20. Checkbox hack.
 21. Animation timing fns using bezier curves.
 22. solid color gradients animations.
-23. transform origin
+23. transform origin.
+24. hypen
+25. column-count
+26. column-gap
+27. column-rule
+28. hyphen
+29. :target
 
 ## Forward Content.
 

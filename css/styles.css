@@ -568,7 +568,7 @@ body {
   right: 6.5rem;
   background-image: radial-gradient(#fd7f8b 20%, #bd2031);
   z-index: 1000;
-  transition: transform 0.5s cubic-bezier(0.00001, 0.005, 0.005, 0.001); }
+  transition: transform 0.2s cubic-bezier(0.00001, 0.005, 0.005, 0.001); }
 
 .navigation__nav {
   height: 100vh;
@@ -578,7 +578,7 @@ body {
   z-index: 1001;
   opacity: 0;
   width: 0;
-  transition: all 0.5s cubic-bezier(1, 1, 1, 1); }
+  transition: all 0.2s cubic-bezier(1, 1, 1, 1); }
 
 .navigation__list {
   position: absolute;
@@ -601,7 +601,7 @@ body {
   background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #ffffff 50%);
   padding: 1rem 2rem;
   background-size: 250%;
-  transition: all 0.5s;
+  transition: all 0.2s;
   display: inline-block; }
 
 .navigation__link:hover, .navigation__link:active {
@@ -624,7 +624,7 @@ body {
     height: 2px;
     background-color: #333;
     display: inline-block;
-    transition: all 0.5s; }
+    transition: all 0.2s; }
   .navigation__icon::before, .navigation__icon::after {
     content: "";
     position: absolute;
@@ -650,6 +650,51 @@ body {
 .navigation__checkbox:checked + .navigation__button .navigation__icon::after {
   transform: rotate(-135deg);
   top: 0; }
+
+.popup {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999999;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s; }
+  .popup :target {
+    opacity: 1;
+    visibility: visible; }
+  .popup__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    background-color: #ffffff;
+    border-radius: 3px;
+    display: table; }
+  .popup__left {
+    width: 33.3%;
+    display: table-cell;
+    vertical-align: middle; }
+  .popup__right {
+    display: table-cell;
+    vertical-align: middle;
+    width: 66.6%; }
+  .popup__img {
+    display: block;
+    width: 100%; }
+  .popup__text {
+    font-size: 1.4rem;
+    column-count: 3;
+    column-gap: 3rem;
+    column-rule: solid 1px #eee;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto; }
 
 .section-about {
   background-color: #f7f7f9;
