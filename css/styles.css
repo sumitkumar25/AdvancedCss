@@ -1,3 +1,24 @@
+/*
+Approach 1
+this will lead to 4 different mixins
+@mixin responsiveA {
+  @media screen and (max-width: 600px) {
+    @content;
+  }
+}
+Approach 1
+*/
+/*
+  RESPONSIVE VARIABLES.
+
+  BREAKPOINTS.
+  Phone: 600px
+  tab portrait: 601px-900px;
+  tab landscape:901px-1200px;
+  desktop:1201px-1800px;
+  xl.: more than 1800px;
+  browser default 1em = 16px
+*/
 @keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -38,9 +59,28 @@
 
 html {
   font-size: 62.5%; }
+  @media screen and (min-width: 112.51em) {
+    html {
+      font-size: 75%; } }
+  @media screen and (max-width: 112.5em) {
+    html {
+      font-size: 70%; } }
+  @media screen and (max-width: 75em) {
+    html {
+      font-size: 65%; } }
+  @media screen and (max-width: 56.25em) {
+    html {
+      font-size: 62.5%; } }
+  @media screen and (max-width: 37.5em) {
+    html {
+      font-size: 50%; } }
 
 body {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  padding: 3rem; }
+  @media screen and (max-width: 56.25em) {
+    body {
+      padding: 0; } }
 
 .margin--defautl {
   margin: 2em; }
@@ -71,8 +111,7 @@ body {
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 1.7;
-  color: #777777;
-  padding: 3rem; }
+  color: #777777; }
 
 .heading-primary {
   color: #ffffff;
