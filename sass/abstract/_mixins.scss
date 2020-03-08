@@ -12,3 +12,39 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+// media queries.
+/*
+Approach 1
+this will lead to 4 different mixins
+@mixin responsiveA {
+  @media screen and (max-width: 600px) {
+    @content;
+  }
+}
+Approach 1
+*/
+
+@mixin responsive($breakpoint) {
+  @if $breakpoint == $bp-phone {
+    @media screen and (max-width: $phone-max-width) {
+      @content;
+    }
+  } @else if $breakpoint == $bp-tab-portrait {
+    @media screen and (max-width: $tab-max-width) {
+      @content;
+    }
+  } @else if $breakpoint == $bp-tab-landscape {
+    @media screen and (max-width: $tab-landspace-max-width) {
+      @content;
+    }
+  } @else if $breakpoint == $bp-desktop {
+    @media screen and (max-width: $desktop-max-width) {
+      @content;
+    }
+  } @else if $breakpoint == $bp-desktop-xl {
+    @media screen and (min-width: $xl-min-width) {
+      @content;
+    }
+  }
+}

@@ -30,3 +30,35 @@ $color-card-4: #564356;
 $grid-row-width: 114rem;
 $gutter-vertical: 6rem;
 $gutter-horizontal: 6rem;
+
+/*
+  RESPONSIVE VARIABLES.
+
+  BREAKPOINTS.
+  Phone: 600px
+  tab portrait: 601px-900px;
+  tab landscape:901px-1200px;
+  desktop:1201px-1800px;
+  xl.: more than 1800px;
+  browser default 1em = 16px
+*/
+
+$phone-min-width: 0;
+$phone-max-width: 37.5em;
+
+$tab-min-width: 37.51em;
+$tab-max-width: 56.25em;
+
+$tab-landspace-min-width: 56.26em;
+$tab-landspace-max-width: 75em;
+
+$desktop-min-width: 75.01em;
+$desktop-max-width: 112.5em;
+
+$xl-min-width: 112.51em;
+
+$bp-phone: "p";
+$bp-tab-portrait: "tl";
+$bp-tab-landscape: "tp";
+$bp-desktop: "d";
+$bp-desktop-xl: "xl";

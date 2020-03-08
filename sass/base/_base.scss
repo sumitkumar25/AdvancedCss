@@ -8,8 +8,29 @@
 html {
   // definition of 1 rem.
   font-size: 62.5%;
+
+  @include responsive($bp-desktop-xl) {
+    font-size: 75%;
+  }
+  @include responsive($bp-desktop) {
+    font-size: 70%;
+  }
+  @include responsive($bp-tab-landscape) {
+    font-size: 65%;
+  }
+  @include responsive($bp-tab-portrait) {
+    font-size: 62.5%;
+  }
+  @include responsive($bp-phone) {
+    font-size: 50%;
+  }
 }
 
 body {
   box-sizing: border-box;
+  padding: 3rem;
+
+  @include responsive($bp-tab-portrait) {
+    padding: 0;
+  }
 }
