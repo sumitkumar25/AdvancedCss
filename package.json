@@ -23,6 +23,6 @@
   },
   "homepage": "https://github.com/sumitkumar25/AdvancedCss#readme",
   "devDependencies": {
-    "node-sass": "^4.13.1"
+    "node-sass": "^7.0.0"
   }
 }
